@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  amazonia_drones-api:
+    environment:
+          - NODE_ENV=production
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/src/app
+    container_name: amazonia_drones-api
+    expose:
+      - '3000'
+    ports:
+      - '3000:3000'
+    command: node ./src/index.ts 
+ 

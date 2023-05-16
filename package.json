@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/J-Romulo/amazonia_drones-api#readme",
   "dependencies": {
-    "typescript": "^5.0.4",
-    "rimraf": "^5.0.0",
+    "@types/express": "^4.17.17",
     "@types/node": "^20.1.4",
-    "ts-node": "^10.9.1"
+    "express": "^4.18.2",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   }
 }

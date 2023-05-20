@@ -10,7 +10,7 @@ export async function up(knex: Knex): Promise<void> {
         table.string('path').notNullable();
         table.string('total_time').notNullable();
         table.timestamps(true, true);
-    })
+    });
 }
 
 

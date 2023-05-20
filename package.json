@@ -5,7 +5,7 @@
   "exports": "./index.js",
   "scripts": {
     "start": "npx nodemon ./src/index.ts",
-    "build": "rimraf ./build && tsc && node build/index.js",
+    "build": "rimraf ./dist && tsc && node dist/src/index.js",
     "mcreate": "knex --knexfile ./knexfile.ts migrate:make",
     "mrun": "knex --knexfile ./knexfile.ts migrate:latest",
     "mrevert": "knex --knexfile ./knexfile.ts migrate:rollback"

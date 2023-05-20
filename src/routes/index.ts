@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { dronesRoutes } from './dronesPath.routes'
+import { dronesRoutes } from './drones.routes'
 
 const routes = Router()
 

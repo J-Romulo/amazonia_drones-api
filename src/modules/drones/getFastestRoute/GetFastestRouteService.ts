@@ -13,6 +13,7 @@ class GetFastestRouteService {
         const fastestRouteToObject = dijkstra.findShortestPath(starting_point, object);
         const fastestRouteFromObjectToDestination = dijkstra.findShortestPath(object, destination);
 
+        fastestRouteToObject.path.pop()
         const path = fastestRouteToObject.path.concat(fastestRouteFromObjectToDestination.path);
         const total_time = fastestRouteToObject.distance + fastestRouteFromObjectToDestination.distance;
 

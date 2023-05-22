@@ -1,3 +1,5 @@
+import { Graph } from "./Dijkstra";
+
 export const mocked_paths = [{
 		"id": 70,
 		"starting_point": "C3",
@@ -99,3 +101,22 @@ export const mocked_paths = [{
 		"updated_at": "2023-05-21T18:44:55.997Z"
 	}
 ]
+
+export const mockedRoutes: Graph = {
+	A1: {
+	  A2: 10,
+	  B1: 10
+	},
+	A2: {
+	  A1: 20,
+	  B2: 30,
+	},
+	B1: {
+	  A1: 10,
+	  B2: 20
+	},
+	B2: {
+	  A2: 10,
+	  B1: 20
+	}
+};
